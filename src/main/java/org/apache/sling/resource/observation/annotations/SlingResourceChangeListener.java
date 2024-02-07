@@ -99,8 +99,11 @@ public @interface SlingResourceChangeListener {
      * must be prepared that the underlying implementation is not able to filter
      * based on this property. In this case the listener gets all events
      * as defined with the other properties.
+     * <p>
+     * This requires Sling API 2.15.0 or newer.
      *
      * @see ResourceChangeListener#PROPERTY_NAMES_HINT
+     *
      */
     String[] property_names_hint() default {};
 }
