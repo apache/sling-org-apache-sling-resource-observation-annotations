@@ -84,7 +84,7 @@ public @interface SlingResourceChangeListener {
      * and added and removed events for resource providers are reported.
      *
      * @see ResourceChangeListener#CHANGES
-     * @see ResourceChangeType
+     * @see ResourceChange.ChangeType
      */
     ResourceChange.ChangeType[] change_types() default {};
 
